@@ -1,0 +1,38 @@
+/*.ebsoc-addon-common {
+    
+}*/
+.ebsoc-addon-object {
+    background-color: white;
+    display: inline-block;
+}
+.ebsoc-addon-attribute {
+    padding: 8px;
+    background-color: #cacaca;
+    border-radius: 3px;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+}
+.ebsoc-addon-button {
+    padding: 12px;
+    background-color: #ECECEC;
+    color: black;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    display: inline-block;
+    margin: 10px;
+}
+.ebsoc-addon-button:hover {
+    background-color: #D1D1D1;
+    display: inline-block;
+}
+.ebsoc-addon-warning {
+    background-color: #FC4850;
+    padding: 9px;
+    color: white;
+}
+.ebsoc-addon-main {
+    height: 80px;
+    overflow: scroll;
+}
