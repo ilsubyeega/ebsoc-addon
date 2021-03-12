@@ -1,6 +1,6 @@
 {
-    "name": "EBS OnlineClass Addon",
-    "description": "Advanced feature for ebs onlineclass (ebsoc.co.kr)",
+    "name": "EBSOC Addon",
+    "description": "Advanced feature for EBS Online Class System (ebsoc.co.kr)",
     "version": "0.1",
     "permissions": [
         "declarativeContent",
