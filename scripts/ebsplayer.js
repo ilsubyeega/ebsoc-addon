@@ -3,16 +3,7 @@ function runEbsPlayer() {
         console.warn("[EBSOC-ADDON] Cannot found location variable. skipping..");
         return;
     }
-    if (location.host != "player.ebsoc.co.kr") {
-        // enable scrolling on player if parent window
-        console.log("o/")
-        if (location.host.contains("ebsoc.co.kr")){
-            if (document.querySelector("#player") == null && document.querySelector("#player").firstElementChild) 
-                return;
-            document.querySelector("#player").firstElementChild.scrolling = "yes";
-        }
-        return;
-    };
+    if (location.host != "player.ebsoc.co.kr") return;
 
     // inject style
     var style = document.createElement("link");
@@ -80,7 +71,7 @@ function runEbsPlayer() {
     warnattr.className = "ebsoc-addon-common ebsoc-addon-warning";
     warnattr.innerHTML = "수업자료에는 저작권법 제25조 제2항에 의해 수업 목적으로 이용한 저작물이 포함되어 있으므로 본 수업자료를 외부에 공개, 게시하는 것을 금지하며 이를 위반하는 경우 저작권 침해로서 관련법에 따라 처벌될 수 있습니다.";
     main.append(warnattr);
-    
+
     const body = document.querySelector("body");
     body.append(main);
 }
