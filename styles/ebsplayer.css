@@ -33,6 +33,10 @@
     color: white;
 }
 .ebsoc-addon-main {
-    height: 80px;
-    overflow: scroll;
+    height: 160px;
+    
+}
+/* lx-player-ebs.css override */
+.video-js {
+    height: 80vh !important;
 }
