@@ -38,7 +38,7 @@ function runEbsPlayer() {
 
     // get title
     const titlevalue = search.get("title");
-    if (titlevalue != null && titlevalue.length > 1) {
+    if (titlevalue != null && titlevalue.length > 1 && titlevalue != "undefined") {
         var titlediv = document.createElement("div");
         titlediv.className = "ebsoc-addon-common ebsoc-addon-attribute";
         titlediv.innerHTML = titlevalue;
@@ -47,7 +47,7 @@ function runEbsPlayer() {
 
     // get original filename
     const originalfilename = search.get("originalFileName");
-    if (originalfilename != null && originalfilename.length > 1) {
+    if (originalfilename != null && originalfilename.length > 1 && originalfilename != "undefined") {
         var filen = document.createElement("div");
         filen.className = "ebsoc-addon-common ebsoc-addon-attribute";
         filen.innerHTML = originalfilename;
@@ -56,7 +56,7 @@ function runEbsPlayer() {
 
     // current playing username
     const userId = search.get("userId");
-    if (userId != null && userId.length > 1) {
+    if (userId != null && userId.length > 1 && userId != "undefined") {
         var uid = document.createElement("div");
         uid.className = "ebsoc-addon-common ebsoc-addon-attribute";
         uid.innerHTML = "@" + userId;
@@ -74,5 +74,8 @@ function runEbsPlayer() {
 
     const body = document.querySelector("body");
     body.append(main);
+
+    // disable full height
+    document.querySelector("body > div.container").setAttribute("style", "height: auto !important");
 }
 runEbsPlayer();

@@ -1,7 +1,7 @@
 {
     "name": "EBSOC Addon",
     "description": "Advanced feature for EBS Online Class System (ebsoc.co.kr)",
-    "version": "0.1",
+    "version": "0.2",
     "permissions": [
         "declarativeContent",
         "*://*.ebsoc.co.kr/*"
